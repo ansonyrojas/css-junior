@@ -1,0 +1,114 @@
+
+/* removing default margin that the browser has */
+
+
+*{
+	margin: 0;
+	padding: 0; 
+
+}
+
+/* adding color to the body of my design */
+
+body{
+
+	background: #e6e6e6;
+}
+
+
+/*center and give a margin to the design*/
+
+header, .main, footer{
+
+	width: 90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+
+
+/*giving color to my navigation bar, and maintaining its shape in case of any exceeded*/
+
+header nav{
+
+	background: #528FD5;
+	overflow: hidden;
+}
+
+/*removing the point that by effect contain the lists*/
+
+header nav ul{
+
+	list-style: none;
+
+}
+
+/*Aligning my navigation bar to the left, I use float to place them side by side.*/
+
+header nav ul li {
+
+	float: left;
+
+}
+
+/* I remove the text decoration from my redirect links, I add an internal margin and I also place all the elements in a block */
+
+header nav ul li a{
+
+	padding: 10px 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*we add an effect, so when you pass the mouse cursor it changes its color*/
+
+header nav ul li a:hover{
+
+	background:#75ACEC;
+
+}
+
+
+/*we add a size, a margin and we align the articles to the left in this case*/
+
+.main .Articles{
+	
+		width: 68.5%;
+		margin-right: 1.5%;
+		float: left;	
+		
+}
+
+/*I add an internal margin, color and a margin*/
+
+.main .Articles article{
+
+		padding: 20px;
+		background: #fff;
+		margin-bottom: 20px;
+		
+}
+
+/*creation of a section for some additional information */
+
+aside{
+
+	box-sizing: border-box;
+	padding: 20px;
+	width: 30%;
+	background: #ff8000;
+ 	float: left;
+ 	box-shadow: 2px 4px 5px #000;
+}
+
+/*we make a clear to clean the floats made previously */
+
+footer{
+
+	background: #000;
+	color: #fff;
+	clear:both;
+	padding: 10px 0px;
+	text-align: center;
+}
